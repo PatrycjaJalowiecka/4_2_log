@@ -56,14 +56,12 @@ def kalkulator():
                 result = (liczba1 / liczba2)
                 print(result)
             else: 
-                logging.warning("Błąd dzielenia przez 0. Uruchom ponownie kalkulator")
+                  logging.warning("Błąd dzielenia przez 0. Uruchom ponownie kalkulator")
                 exit(1)
-        elif liczba2 != 0:   
+        else: liczba2 != 0:   
             logging.info("Dzielenie %s przez %s" % (liczba1, liczba2))
             result = (liczba1 / liczba2)
             print(result)
-        else:
-            liczba2 = float(input(""))
     else:
         print("Niewłaściwe parametry")
         exit(1) 
