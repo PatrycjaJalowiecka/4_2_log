@@ -49,15 +49,12 @@ def kalkulator():
             exit(1)    
     elif działanie == 4:
         while liczba2 == 0:
-            logging.warning("Nie można dzielić przez 0. Wybierz inną liczbę")
+            print("podaj liczbę różną od zera")
             liczba2 = float(input(""))
-            if liczba2 !=0:
-                logging.info("Dzielenie %s przez %s" % (liczba1, liczba2))
-                result = (liczba1 / liczba2)
-                print(result)
-            else: 
-                  logging.warning("Błąd dzielenia przez 0. Uruchom ponownie kalkulator")
-                exit(1)
+        else:
+            logging.info("Dzielenie %s przez %s" % (liczba1, liczba2))
+            result = (liczba1 / liczba2)
+            print(result)          
     else:
         print("Niewłaściwe parametry")
         exit(1) 
